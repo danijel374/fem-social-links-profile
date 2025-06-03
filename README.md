@@ -26,7 +26,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### 🔗 Links
 
-- 💡 Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/pixel-almost-perfect-blog-preview-card-bP5EjW7n-T)
+- 💡 Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsivepixel-almost-perfect-social-links-profile-ISlZu_CN6y)
 - 🌐 Live Site URL: [QR code component live](https://danijel374.github.io/fem-social-links-profile/)
 
 ---
