@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+:root {
+  --gray-900: hsl(0, 0%, 8%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-700: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 0.25rem;
+}
+
+.text-preset-1-600 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.text-preset-2-400 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.text-preset-2-700 {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: var(--spacing-300);
+  background-color: var(--gray-900);
+}
+
+.avatar-img {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+}
+
+/* Card social links */
+.card {
+  width: 100%;
+  max-width: 24rem;
+  padding: clamp(
+    var(--spacing-300),
+    calc(18.366px + 1.502vw),
+    var(--spacing-500)
+  );
+  border-radius: 12px;
+  background-color: var(--gray-800);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-300);
+}
+
+.card__name-address {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+}
+
+.card__address {
+  color: var(--green);
+}
+
+.card__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-300);
+  gap: var(--spacing-200);
+  padding: 0;
+  list-style: none;
+}
+
+.card__links li {
+  width: 100%;
+}
+
+/* link */
+.link {
+  display: inline-block;
+  padding: var(--spacing-150);
+  width: 100%;
+  max-width: 19rem;
+  border-radius: 8px;
+  background-color: var(--gray-700);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
+  color: inherit;
+  accent-color: var(--green);
+  text-decoration: none;
+  text-align: center;
+}
+
+.link:hover {
+  background-color: var(--green);
+  color: var(--gray-700);
+}
+
+.link:active {
+  transform: scale(0.98);
+}
